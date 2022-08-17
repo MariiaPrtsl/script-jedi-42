@@ -10,6 +10,7 @@ function saleHotdogs(n) {
 
 //http://www.codewars.com/kata/572059afc2f4612825000d8a
 function howManydays(month) {
+  let days;
   switch (month) {
     case 2:
       days = 28;
