@@ -26,3 +26,24 @@ function pickIt(arr) {
 }
 
 //http://www.codewars.com/kata/5721c189cdd71194c1000b9b
+function grabDoll(dolls) {
+  let bag = [];
+  for (var i = 0; i < dolls.length; i++) {
+    if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll')
+      bag.push(dolls[i]);
+    else continue;
+    if (bag.length === 3) break;
+  }
+  return bag;
+}
+
+//https://www.codewars.com/kata/5722b3f0bd5583cf44001000
+function giveMeFive(obj) {
+  let five = [];
+  for (key in obj) {
+    if (key.length === 5) five.push(key);
+    if (obj[key].length === 5) five.push(obj[key]);
+  }
+  return five;
+}
+
