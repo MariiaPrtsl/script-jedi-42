@@ -26,3 +26,12 @@ function firstToLast(str, c) {
       return last - first;
     }
 }
+
+//http://www.codewars.com/kata/57280481e8118511f7000ffa
+function splitAndMerge(string, separator) {
+  return string
+    .split("")
+    .join(separator + "")
+    .split(separator + " " + separator)
+    .join(" ");
+}
