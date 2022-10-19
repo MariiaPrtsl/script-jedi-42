@@ -7,3 +7,18 @@ function wordToBin(str) {
   }
   return arr;
 }
+
+//https://www.codewars.com/kata/57f75cc397d62fc93d000059
+function calc(x) {
+  let str = "";
+  let result = 0;
+  for (let i = 0; i < x.length; i++) {
+    str += String(x.charCodeAt(i));
+  }
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "7") {
+      result += 6;
+    }
+  }
+  return result;
+}
