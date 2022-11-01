@@ -8,3 +8,17 @@ function threeInOne(arr) {
 }
 
 //http://www.codewars.com/kata/572df796914b5ba27c000c90
+
+
+
+//http://www.codewars.com/kata/572fdeb4380bb703fc00002c
+function isolateIt(arr) {
+  return arr.map((str) => {
+    if (str.length % 2 === 0) {
+      return str.slice(0, str.length / 2) + "|" + str.slice(str.length / 2);
+    }
+    if (str.length % 2 !== 0) {
+      return str.slice(0, str.length / 2) + "|" + str.slice(str.length / 2 + 1);
+    }
+  });
+}
