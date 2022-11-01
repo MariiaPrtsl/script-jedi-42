@@ -22,3 +22,4 @@ function loopArr(arr, direction, steps) {
 }
 
 // http://www.codewars.com/kata/572af273a3af3836660014a1
+
