@@ -1,6 +1,6 @@
 //https://www.codewars.com/kata/56c2a067585d9ac8280003c9/
 
-function basicMatch(candidate, job) {
+function matchJobSkills(candidate, job) {
   if (candidate.preference === "desired") {
     candidate.experience *= 1.5;
   }
@@ -13,7 +13,7 @@ function basicMatch(candidate, job) {
   return job.substitutions.some((skill) => skill.name === candidate.name);
 }
 
-function advancedMatch(candidate, job) {
+function matchSuitableSkills(candidate, job) {
   if (
     candidate.skills.some(
       (skill) => skill.name === job.name && skill.preference === "avoid"
@@ -21,9 +21,9 @@ function advancedMatch(candidate, job) {
   ) {
     return false;
   }
-  return candidate.skills.some((candidate) => basicMatch(candidate, job));
+  return candidate.skills.some((candidate) => matchJobSkills(candidate, job));
 }
 
 function match(candidate, job) {
-  return job.skills.every((job) => advancedMatch(candidate, job));
+  return job.skills.every((job) => matchSuitableSkills(candidate, job));
 }
