@@ -23,7 +23,7 @@ function loopArr(arr, direction, steps) {
 
 // http://www.codewars.com/kata/572af273a3af3836660014a1
 function infiniteLoop(arr, d, n) {
-  for (var i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i++) {
     if (d === "left") {
       arr[2].push(arr[0].shift());
       arr[1].push(arr[2].shift());
