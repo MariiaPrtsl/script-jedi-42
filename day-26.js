@@ -1,6 +1,6 @@
 //  https://www.codewars.com/kata/sort-with-arrow-functions
 
-const OrderPeople = (people) => {
+const orderPeople = (people) => {
   return people.sort((a, b) => a.age - b.age);
 };
 
